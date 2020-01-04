@@ -36,5 +36,5 @@ public class Cart {
     public String toString() {
         return "Cart [menuItemList=" + menuItemList + ", total=" + total + "]";
     }
-    
+
 }

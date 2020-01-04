@@ -1,5 +1,6 @@
 package com.cognizant.truyum.model;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class MenuItem {
@@ -9,7 +10,7 @@ public class MenuItem {
     private boolean active;
     private Date dateOfLaunch;
     private String category;
-    private boolean freedelivery;
+    private boolean freeDelivery;
 
     public MenuItem() {
         // TODO Auto-generated constructor stub
@@ -24,7 +25,7 @@ public class MenuItem {
         this.active = active;
         this.dateOfLaunch = dateOfLaunch;
         this.category = category;
-        this.freedelivery = freedelivery;
+        this.freeDelivery = freedelivery;
     }
 
     public long getId() {
@@ -76,18 +77,11 @@ public class MenuItem {
     }
 
     public boolean isFreedelivery() {
-        return freedelivery;
+        return freeDelivery;
     }
 
     public void setFreedelivery(boolean freedelivery) {
-        this.freedelivery = freedelivery;
-    }
-
-    @Override
-    public String toString() {
-        return "MenuItem [id=" + id + ", name=" + name + ", price=" + price + ", active=" + active
-                + ", dateOfLaunch=" + dateOfLaunch + ", category=" + category + ", freedelivery="
-                + freedelivery + "]";
+        this.freeDelivery = freedelivery;
     }
 
     @Override
@@ -97,7 +91,7 @@ public class MenuItem {
         result = prime * result + (active ? 1231 : 1237);
         result = prime * result + ((category == null) ? 0 : category.hashCode());
         result = prime * result + ((dateOfLaunch == null) ? 0 : dateOfLaunch.hashCode());
-        result = prime * result + (freedelivery ? 1231 : 1237);
+        result = prime * result + (freeDelivery ? 1231 : 1237);
         result = prime * result + (int) (id ^ (id >>> 32));
         result = prime * result + ((name == null) ? 0 : name.hashCode());
         result = prime * result + Float.floatToIntBits(price);
@@ -125,7 +119,7 @@ public class MenuItem {
                 return false;
         } else if (!dateOfLaunch.equals(other.dateOfLaunch))
             return false;
-        if (freedelivery != other.freedelivery)
+        if (freeDelivery != other.freeDelivery)
             return false;
         if (id != other.id)
             return false;
@@ -137,6 +131,14 @@ public class MenuItem {
         if (Float.floatToIntBits(price) != Float.floatToIntBits(other.price))
             return false;
         return true;
+    }
+
+    @Override
+    public String toString() {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+        return String.format("%-10s%-20s%-10.2f%-10s%-20s%-20s%s", id, name, price,
+                (active == true ? "Yes" : "No"), sdf.format(dateOfLaunch), category,
+                (freeDelivery == true ? "Yes" : "No"));
     }
 
 }
