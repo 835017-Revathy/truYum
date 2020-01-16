@@ -13,15 +13,15 @@ public class MenuItemDaoCollectionImpl implements MenuItemDao {
     public MenuItemDaoCollectionImpl() {
         if (menuItemList == null) {
             MenuItem item1 = new MenuItem(1, "Sandwich", 99.00f, true,
-                    DateUtil.converToDate("15/03/2017"), "Main Course", true);
+                    DateUtil.convertToDate("15/03/2017"), "Main Course", true);
             MenuItem item2 = new MenuItem(2, "Burger", 129.00f, true,
-                    DateUtil.converToDate("23/12/2017"), "Main Course", false);
+                    DateUtil.convertToDate("23/12/2017"), "Main Course", false);
             MenuItem item3 = new MenuItem(3, "Pizza", 149.00f, true,
-                    DateUtil.converToDate("21/08/2018"), "Main Course", false);
+                    DateUtil.convertToDate("21/08/2018"), "Main Course", false);
             MenuItem item4 = new MenuItem(4, "French Fries", 57.00f, false,
-                    DateUtil.converToDate("02/07/2017"), "Starters", true);
+                    DateUtil.convertToDate("02/07/2017"), "Starters", true);
             MenuItem item5 = new MenuItem(5, "Chocolate Brownie", 32.00f, true,
-                    DateUtil.converToDate("02/11/2022"), "Desserts", true);
+                    DateUtil.convertToDate("02/11/2022"), "Desserts", true);
             menuItemList = new ArrayList<MenuItem>();
             menuItemList.add(item1);
             menuItemList.add(item2);

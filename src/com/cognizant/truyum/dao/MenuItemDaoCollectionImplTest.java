@@ -43,7 +43,7 @@ public class MenuItemDaoCollectionImplTest {
     public static void testModifyMenuItem() {
         System.out.println("Modify Menu Item");
         MenuItem menuitem = new MenuItem(1, "Eat and Enjoy", 129.00f, true,
-                DateUtil.converToDate("15/03/2017"), "Main Dish", false);
+                DateUtil.convertToDate("15/03/2017"), "Main Dish", false);
         menudao.modifyMenuItem(menuitem);
     }
 
