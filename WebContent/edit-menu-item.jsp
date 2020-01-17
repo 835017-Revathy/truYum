@@ -14,7 +14,7 @@
 </head>
 <body>
     <c:set var="menuItem" value="${menuItem}"></c:set>
-    <header> truYum <img src="images/truyum-logo-light.png" hspace="10"> <nav>
+    <header> truYum <img src="images/truyum-logo-light.png" hspace="10"> </img> <nav>
     <a href="ShowMenuItemListAdmin">Menu</a> </nav> </header>
     <h3>Edit Menu Item</h3>
     <form name="menuItemForm" action="EditMenuItem" method="post" autocomplete="off"
@@ -44,11 +44,11 @@
                             <input type="radio" name="active" id="active" value="Yes"
                                 checked="checked">Yes
                             <input type="radio" name="active" id="active" value="No">No
-                </c:when>
+                        </c:when>
                         <c:otherwise>
                             <input type="radio" name="active" id="active" value="Yes">Yes
                     <input type="radio" name="active" id="active" value="No" checked="checked">No
-                </c:otherwise>
+                        </c:otherwise>
                     </c:choose></td>
                 <td align="right"><f:formatDate value="${menuItem.getDateOfLaunch()}"
                         var="dateOfLaunch" pattern="dd/MM/yyyy"></f:formatDate><input type="text"
