@@ -49,5 +49,4 @@
     </table>
     <footer> Copyright &copy; 2019 </footer>
 </body>
-</body>
 </html>

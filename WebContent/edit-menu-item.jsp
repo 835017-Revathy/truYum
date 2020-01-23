@@ -6,11 +6,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Edit Menu</title>
+<script type="text/javascript" src="js/script.js"></script>
 <link rel="stylesheet" type="text/css" href="styles/style.css" />
 <link rel="shortcut icon" href="images/truyum-logo-dark.png" />
-<script type="text/javascript" src="js/script.js">
-    
-</script>
 </head>
 <body>
     <c:set var="menuItem" value="${menuItem}"></c:set>
@@ -78,5 +76,6 @@
         </table>
     </form>
     <footer> Copyright &copy; 2019 </footer>
+
 </body>
 </html>

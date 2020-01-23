@@ -15,8 +15,8 @@
         <b>Cart</b>
     </h1>
     <p id="cart-empty">
-        No items in cart. Use "Add to cart" option in <a href="ShowMenuItemListCustomer"> Menu
-            item List</a>
+        No movies in favorite. Use "Add to favorite" option in <a href="ShowMenuItemListCustomer">
+            Movie List</a>
     </p>
     <footer> Copyright &copy; 2019 </footer>
 </body>
